@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form thêm sinh viên</title>
+  </head>
+  <body>
+    <!-- Xây dựng form sinh viên -->
+    <center><h2>Form thêm sinh viên</h2></center>
+    <form>
+      <label>Mã sinh viên </label> <br>
+      <input required ><br><br>
+      <label>Họ và tên </label><br><input type="text" required><br><br>
+      <label>Email</label><br> 
+      <input type="email" required> <br><br>
+      <label>Ngày sinh</label><br>
+      <input type="date"> <br><br>
+      <label>Giới tính</label><br>
+      <input type="radio" id="nam" name="gioiTinh" value="Nam" checked>
+      <label for="nam">Nam</label>
+      <input type="radio" id="nu" name="gioiTinh" value="Nữ">
+      <label for="nu">Nữ</label><br><br>
+      <label>Ghi chú</label><br>
+      <textarea rows="3" cols="30"></textarea> <br><br>
+      <input type="submit" value="Thêm sinh viên"><br><br>
+    </form>
+
+    <!--Tạo bảng hiển thị danh sách sinh viên -->
+    <hr>
+    <center><h2>Danh sách sinh viên</h2></center>
+    <table border="1" cellspacing="0" cellpadding="8">
+    <thead>
+        <tr>
+        <th>STT</th>
+        <th>MSV</th>
+        <th>Họ tên</th>
+        <th>Email</th>
+        <th>Giới tính</th>
+        <th>Ngày sinh</th>
+        <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>1</td>
+        <td>SV001</td>
+        <td>Nguyễn Văn A</td>
+        <td>nguyenvana@example.com</td>
+        <td>Nam</td>
+        <td>2000-01-01</td>
+        <td>
+            <a href="#">Sửa</a> |
+            <a href="#">Xóa</a>
+        </td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>SV002</td>
+        <td>Trần Thị Huệ</td>
+        <td>tranthihue@example.com</td>
+        <td>Nữ</td>
+        <td>2004-11-24</td>
+        <td>
+            <a href="#">Sửa</a> |
+            <a href="#">Xóa</a>
+        </td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>SV003</td>
+        <td>Lê Văn C</td>
+        <td>levanc@example.com</td>
+        <td>Nam</td>
+        <td>2002-09-30</td>
+        <td>
+            <a href="#">Sửa</a> |
+            <a href="#">Xóa</a>
+        </td>
+        </tr>
+    </tbody>
+    </table>
+  </body>
