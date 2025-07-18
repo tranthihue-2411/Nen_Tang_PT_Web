@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form thêm sinh viên</title>
+    <style>
+      h2 {
+        background-color: #f0a9cb;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin: 40px auto;
+        width: 100%;
+        border-radius: 10px;
+      }
+      form {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"] {
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #0288d1;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #f0a9cb;
+      }
+  </style>
+  </head>
+  <body>
+    <center><h2>Form thêm sinh viên</h2></center>
+    <form>
+      <label>Mã sinh viên </label> <br>
+      <input type="text" ><br><br>
+      <label>Họ và tên </label><br><input type="text" required><br><br>
+      <label>Email</label><br> 
+      <input type="email" required> <br><br>
+      <label>Ngày sinh</label><br>
+      <input type="date"> <br><br>
+      <label>Giới tính</label><br>
+      <input type="radio" id="nam" name="gioiTinh" value="Nam" checked>
+      <label for="nam">Nam</label>
+      <input type="radio" id="nu" name="gioiTinh" value="Nữ">
+      <label for="nu">Nữ</label><br><br>
+      <label>Ghi chú</label><br>
+      <textarea rows="3" cols="30"></textarea> <br><br>
+      <input type="submit" value="Thêm sinh viên">
+    </form>
+  </body>
