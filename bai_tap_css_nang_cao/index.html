@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Bài tập css nâng cao</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+   <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg mb-4" style="background-color: rgb(253, 229, 234);">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand text-dark fw-bold" href="#">Quản lý sinh viên</a>
+      </div>
+    </nav>
+
+    <!-- Form -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="mb-3">Form thêm sinh viên</h4>
+          <form>
+            <div class="mb-3">
+              <label for="msv" class="form-label">Mã sinh viên</label>
+              <input type="text" class="form-control" id="msv" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="hoten" class="form-label">Họ và tên</label>
+              <input type="text" class="form-control" id="hoten" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="ngaysinh" class="form-label">Ngày sinh</label>
+              <input type="date" class="form-control" id="ngaysinh">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Giới tính</label><br>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="nam" name="gioiTinh" value="Nam" checked>
+                <label class="form-check-label" for="nam">Nam</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="nu" name="gioiTinh" value="Nữ">
+                <label class="form-check-label" for="nu">Nữ</label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="ghichu" class="form-label">Ghi chú</label>
+              <textarea class="form-control" id="ghichu" rows="3"></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-primary " value="Thêm sinh viên">
+          </form>
+        </div>
+        <!-- Bảng -->
+        <div class="col-md-8">  
+          <h4 class="mb-3">Danh sách sinh viên</h4>
+          <table class="table table-bordered table-hover align-middle ">
+            <thead class="table-danger">
+              <tr>
+                <th>STT</th>
+                <th>MSV</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>SV001</td>
+                <td>Nguyễn Văn A</td>
+                <td>nguyenvana@example.com</td>
+                <td>Nam</td>
+                <td>2000-01-01</td>
+                <td>
+                  <a href="#" class="btn btn-sm btn-warning btn-custom">Sửa</a>
+                  <a href="#" class="btn btn-sm btn-danger btn-custom">Xóa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>SV002</td>
+                <td>Trần Thị Huệ</td>
+                <td>tranthihue@example.com</td>
+                <td>Nữ</td>
+                <td>2004-11-24</td>
+                <td>
+                  <a href="#" class="btn btn-sm btn-warning btn-custom">Sửa</a>
+                  <a href="#" class="btn btn-sm btn-danger btn-custom">Xóa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>SV003</td>
+                <td>Lê Văn C</td>
+                <td>levanc@example.com</td>
+                <td>Nam</td>
+                <td>2002-09-30</td>
+                <td>
+                  <a href="#" class="btn btn-sm btn-warning btn-custom">Sửa</a>
+                  <a href="#" class="btn btn-sm btn-danger ">Xóa</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
