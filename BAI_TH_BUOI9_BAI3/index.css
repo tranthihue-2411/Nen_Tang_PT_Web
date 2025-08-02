@@ -1,0 +1,122 @@
+.nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:gray;
+    color:white;
+}
+.subnav2 ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.first button {
+    border: 1px solid black;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.nut1 button:hover {
+  background-color: #90b8e3;
+}
+.styled-table {
+    margin:10px;
+    height: 241px;
+    width: 1445px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.styled-table thead {
+  background-color: gray;
+  color: white;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-table tbody i {
+  cursor: pointer;
+}
+.delete-button {
+  padding: 10px 10px;
+  background-color:#dc3545;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background-color:darkblue;
+    color: white;
+    padding-left: 100px;
+}
+.icon-box {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+.icon-blue {
+    background-color: #007bff; 
+}
+
+.icon-yellow {
+    background-color: #ffc107; 
+}
+
+.icon-red {
+    background-color: #dc3545; 
+}
+.btnSearch{
+    background-color:white;
+    align-items: center;
+    gap: 10px;
+    display:flex;
+}
+.btnSearch .iconSearch {
+    width: 32px;
+    height: 32px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.status {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.active {
+    color: green;
+}
+
+.inactive {
+    color: red;
+}
